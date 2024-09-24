@@ -38,21 +38,26 @@ public class HomePage_BepAnToan {
 		PageFactory.initElements(_driver,this);
 	}
 	
-	public void locTheoDanhMucChauRuaChenBat() {
+	public void locTheoDanhMucChauRuaChenBat() throws InterruptedException {
 		ChauVoiRuaBatMenu.click();
-		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		 wait.until(ExpectedConditions.visibilityOf(DanhMucChauRuaChenBat));
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		 WebElement DanhMucChauRuaChenBat = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='mb-1'])[1]/a")));
+		 wait.until(ExpectedConditions.elementToBeClickable(DanhMucChauRuaChenBat));
 		 JavascriptExecutor js = (JavascriptExecutor) driver;
 		 js.executeScript("arguments[0].click();", DanhMucChauRuaChenBat);  
-	//xuatDanhSachSanPham();		
+		 Thread.sleep(5000);
+
+		 //xuatDanhSachSanPham();		
 	}
-	public void locTheoDanhMucVoiRuaChenBat() {
+	public void locTheoDanhMucVoiRuaChenBat() throws InterruptedException {
 		ChauVoiRuaBatMenu.click();
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-		wait.until(ExpectedConditions.visibilityOf(DanhMucVoiRuaChenBat));
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click();", DanhMucVoiRuaChenBat);    
-		//xuatDanhSachSanPham();
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
+		 WebElement DanhMucVoiRuaChenBat = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='mb-1'])[2]/a")));
+		 wait.until(ExpectedConditions.elementToBeClickable(DanhMucVoiRuaChenBat));
+		 JavascriptExecutor js = (JavascriptExecutor) driver;
+		 js.executeScript("arguments[0].click();", DanhMucVoiRuaChenBat);  
+		 Thread.sleep(5000);
+		 //xuatDanhSachSanPham();
 	}
 	public void danhSachGiamGiaNhieu() {
 		 ChauVoiRuaBatMenu.click(); 

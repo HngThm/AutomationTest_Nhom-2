@@ -25,9 +25,8 @@ public class ChauVoiRuaBat_BepAnToan extends CommonBase {
 		HomePage_BepAnToan ListProductTheoDanhMuc = new HomePage_BepAnToan(driver);
 		ListProductTheoDanhMuc.locTheoDanhMucChauRuaChenBat();
 		List<Integer> danhSachChauRua = ListProductTheoDanhMuc.xuatDanhSachSanPham();
-		//assertTrue(isElementVisibility(By.xpath("//h1[contains(text(),'Chậu rửa chén bát')]")));
 		//Thread.sleep(3000);
-		//Assert.assertTrue(HomePage_BepAnToan.kiemTraLocSanPhamTheoDanhMuc(danhSachChauRua));
+		Assert.assertTrue(HomePage_BepAnToan.kiemTraLocSanPhamTheoDanhMuc(danhSachChauRua));
 		assertTrue(isElementVisibility(By.xpath("//h1[contains(text(),'Chậu rửa chén bát')]")));
 	}
 	@Test(priority=2)
@@ -35,7 +34,7 @@ public class ChauVoiRuaBat_BepAnToan extends CommonBase {
 		HomePage_BepAnToan ListProductTheoDanhMuc = new HomePage_BepAnToan(driver);
 		ListProductTheoDanhMuc.locTheoDanhMucVoiRuaChenBat();
 		List<Integer> danhSachVoiRua = ListProductTheoDanhMuc.xuatDanhSachSanPham();
-		//Assert.assertTrue(HomePage_BepAnToan.kiemTraLocSanPhamTheoDanhMuc(danhSachVoiRua));
+		Assert.assertTrue(HomePage_BepAnToan.kiemTraLocSanPhamTheoDanhMuc(danhSachVoiRua));
 		assertTrue(isElementVisibility(By.xpath("//h1[contains(text(),'Vòi rửa chén bát')]")));
 	}
 //	@Test(priority=3)
