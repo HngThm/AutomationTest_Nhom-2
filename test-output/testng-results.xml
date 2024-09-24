@@ -1,25 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-22T22:22:57 ICT" name="Default suite" finished-at="2024-09-22T22:24:48 ICT" duration-ms="111064">
+  <suite started-at="2024-09-24T14:05:16 ICT" name="Default suite" finished-at="2024-09-24T14:07:35 ICT" duration-ms="139029">
     <groups>
     </groups>
-    <test started-at="2024-09-22T22:22:57 ICT" name="Default test" finished-at="2024-09-22T22:24:48 ICT" duration-ms="111064">
-      <class name="automation.testsuite.ChauVoiRuaBat_BepAnToan">
-        <test-method is-config="true" signature="openChrome()[pri:0, instance:automation.testsuite.ChauVoiRuaBat_BepAnToan@dd8ba08]" started-at="2024-09-22T22:22:57 ICT" name="openChrome" finished-at="2024-09-22T22:23:11 ICT" duration-ms="14637" status="PASS">
+    <test started-at="2024-09-24T14:05:16 ICT" name="Default test" finished-at="2024-09-24T14:07:35 ICT" duration-ms="139029">
+      <class name="automation.testsuite.MuaNgay_Thietbinhabep">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:automation.testsuite.MuaNgay_Thietbinhabep@70e9c95d]" started-at="2024-09-24T14:05:16 ICT" name="openBrowser" finished-at="2024-09-24T14:05:29 ICT" duration-ms="13546" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openChrome -->
-        <test-method signature="clickMucGiaNhoHon3()[pri:5, instance:automation.testsuite.ChauVoiRuaBat_BepAnToan@dd8ba08]" started-at="2024-09-22T22:23:11 ICT" name="clickMucGiaNhoHon3" finished-at="2024-09-22T22:24:47 ICT" duration-ms="95479" status="PASS">
+        </test-method> <!-- openBrowser -->
+        <test-method signature="MuangayFail_DiachiBlank()[pri:0, instance:automation.testsuite.MuaNgay_Thietbinhabep@70e9c95d]" started-at="2024-09-24T14:05:29 ICT" name="MuangayFail_DiachiBlank" finished-at="2024-09-24T14:05:38 ICT" duration-ms="8570" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickMucGiaNhoHon3 -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:automation.testsuite.ChauVoiRuaBat_BepAnToan@dd8ba08]" started-at="2024-09-22T22:24:47 ICT" name="closeBrowser" finished-at="2024-09-22T22:24:48 ICT" duration-ms="848" status="PASS">
+        </test-method> <!-- MuangayFail_DiachiBlank -->
+        <test-method is-config="true" signature="closerFireFox()[pri:0, instance:automation.testsuite.MuaNgay_Thietbinhabep@70e9c95d]" started-at="2024-09-24T14:05:38 ICT" name="closerFireFox" finished-at="2024-09-24T14:05:39 ICT" duration-ms="1277" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- automation.testsuite.ChauVoiRuaBat_BepAnToan -->
+        </test-method> <!-- closerFireFox -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:automation.testsuite.MuaNgay_Thietbinhabep@70e9c95d]" started-at="2024-09-24T14:05:39 ICT" name="openBrowser" finished-at="2024-09-24T14:05:52 ICT" duration-ms="12618" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="MuangayFail_HotenBlank()[pri:0, instance:automation.testsuite.MuaNgay_Thietbinhabep@70e9c95d]" started-at="2024-09-24T14:05:52 ICT" name="MuangayFail_HotenBlank" finished-at="2024-09-24T14:06:01 ICT" duration-ms="9132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MuangayFail_HotenBlank -->
+        <test-method is-config="true" signature="closerFireFox()[pri:0, instance:automation.testsuite.MuaNgay_Thietbinhabep@70e9c95d]" started-at="2024-09-24T14:06:01 ICT" name="closerFireFox" finished-at="2024-09-24T14:06:02 ICT" duration-ms="1419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closerFireFox -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:automation.testsuite.MuaNgay_Thietbinhabep@70e9c95d]" started-at="2024-09-24T14:06:02 ICT" name="openBrowser" finished-at="2024-09-24T14:06:19 ICT" duration-ms="16584" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="MuangayFail_SDTBlank()[pri:0, instance:automation.testsuite.MuaNgay_Thietbinhabep@70e9c95d]" started-at="2024-09-24T14:06:19 ICT" name="MuangayFail_SDTBlank" finished-at="2024-09-24T14:06:27 ICT" duration-ms="8388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MuangayFail_SDTBlank -->
+        <test-method is-config="true" signature="closerFireFox()[pri:0, instance:automation.testsuite.MuaNgay_Thietbinhabep@70e9c95d]" started-at="2024-09-24T14:06:27 ICT" name="closerFireFox" finished-at="2024-09-24T14:06:28 ICT" duration-ms="1180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closerFireFox -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:automation.testsuite.MuaNgay_Thietbinhabep@70e9c95d]" started-at="2024-09-24T14:06:28 ICT" name="openBrowser" finished-at="2024-09-24T14:06:41 ICT" duration-ms="12372" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="MuangayFail_SDTInvalid()[pri:0, instance:automation.testsuite.MuaNgay_Thietbinhabep@70e9c95d]" started-at="2024-09-24T14:06:41 ICT" name="MuangayFail_SDTInvalid" finished-at="2024-09-24T14:06:49 ICT" duration-ms="8361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MuangayFail_SDTInvalid -->
+        <test-method is-config="true" signature="closerFireFox()[pri:0, instance:automation.testsuite.MuaNgay_Thietbinhabep@70e9c95d]" started-at="2024-09-24T14:06:49 ICT" name="closerFireFox" finished-at="2024-09-24T14:06:50 ICT" duration-ms="1253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closerFireFox -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:automation.testsuite.MuaNgay_Thietbinhabep@70e9c95d]" started-at="2024-09-24T14:06:50 ICT" name="openBrowser" finished-at="2024-09-24T14:07:02 ICT" duration-ms="11328" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="MuangayFail_leaveBlank()[pri:0, instance:automation.testsuite.MuaNgay_Thietbinhabep@70e9c95d]" started-at="2024-09-24T14:07:02 ICT" name="MuangayFail_leaveBlank" finished-at="2024-09-24T14:07:10 ICT" duration-ms="8406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MuangayFail_leaveBlank -->
+        <test-method is-config="true" signature="closerFireFox()[pri:0, instance:automation.testsuite.MuaNgay_Thietbinhabep@70e9c95d]" started-at="2024-09-24T14:07:10 ICT" name="closerFireFox" finished-at="2024-09-24T14:07:11 ICT" duration-ms="1149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closerFireFox -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:automation.testsuite.MuaNgay_Thietbinhabep@70e9c95d]" started-at="2024-09-24T14:07:11 ICT" name="openBrowser" finished-at="2024-09-24T14:07:24 ICT" duration-ms="12702" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="MuangaySuccess()[pri:0, instance:automation.testsuite.MuaNgay_Thietbinhabep@70e9c95d]" started-at="2024-09-24T14:07:24 ICT" name="MuangaySuccess" finished-at="2024-09-24T14:07:33 ICT" duration-ms="9511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MuangaySuccess -->
+        <test-method is-config="true" signature="closerFireFox()[pri:0, instance:automation.testsuite.MuaNgay_Thietbinhabep@70e9c95d]" started-at="2024-09-24T14:07:33 ICT" name="closerFireFox" finished-at="2024-09-24T14:07:35 ICT" duration-ms="1166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closerFireFox -->
+      </class> <!-- automation.testsuite.MuaNgay_Thietbinhabep -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
