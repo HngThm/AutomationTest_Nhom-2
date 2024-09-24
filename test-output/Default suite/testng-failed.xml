@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.Tubep_MuaTGTest">
+      <class name="automation.testsuite.Sanpham_Thietbinhabep">
         <methods>
-          <include name="muaTGThatBai_HoTenBlank"/>
-          <include name="muaTGThanhCong"/>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-          <include name="muaTGThatBai_SoDienThoaiBlank"/>
+          <include name="CheckBtnMuaNgay"/>
+          <include name="CheckBtnKhaosat"/>
+          <include name="openFireFox"/>
         </methods>
-      </class> <!-- automation.testsuite.Tubep_MuaTGTest -->
+      </class> <!-- automation.testsuite.Sanpham_Thietbinhabep -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
