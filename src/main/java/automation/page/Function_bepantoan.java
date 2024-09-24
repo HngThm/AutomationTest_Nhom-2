@@ -24,6 +24,18 @@ public class Function_bepantoan extends CommonBase{
 	@FindBy(xpath = "( //span[text()='Mua trả góp'])[1]") WebElement Muatragop;
 	@FindBy(xpath = "//a[text()=' Thiết Bị Nhà Bếp Khác ']") WebElement TabThietbinhabep;
 	@FindBy(xpath = "h4[text()='BỘ NỒI TỪ KAINER KA-304S']") WebElement SanphamBeptu;
+	@FindBy(xpath = "//input[@placeholder='Nhập họ và tên']") WebElement Hoten;
+	@FindBy(xpath = "(//input[@placeholder='Nhập họ và tên'])[2]") WebElement HotenMuatragop;
+	@FindBy(xpath = "//input[@placeholder='Nhập số điện thoại']") WebElement Sodienthoai;
+	@FindBy(xpath = "(//input[@placeholder='Nhập số điện thoại'])[2]") WebElement SodienthoaiMuatragop;
+	@FindBy(xpath = "//input[@placeholder='Nhập số nhà, tên đường, phường/ xã, quận/huyện, tỉnh/ thành phố']") WebElement Diachi;
+	@FindBy(xpath = "(//input[@placeholder='Nhập địa chỉ'])[1]") WebElement Diachituvan;
+	@FindBy(xpath = "(//input[@placeholder='Nhập địa chỉ'])[2]") WebElement Diachimuatragop;
+	@FindBy(xpath = "//textarea[@placeholder='Nhập lưu ý']") WebElement Loinhan;
+	@FindBy(xpath = "(//textarea[@placeholder='Nhập lưu ý'])[2]") WebElement LoinhanMuatragop;
+	@FindBy(xpath = "//span[text()='Thanh toán']") WebElement btnThanhtoan;
+	@FindBy(xpath = "(//span[text()='Nhận tư vấn'])[1]") WebElement btnNhanTuvan;
+	@FindBy(xpath = "(//span[text()='Nhận tư vấn'])[2]") WebElement  btnNhanTuVanMuatragop;
 	
 	public Function_bepantoan(WebDriver _driver)
 	{
@@ -38,7 +50,7 @@ public class Function_bepantoan extends CommonBase{
 		WebElement beptu = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='max-w-[228px] m-auto'])[1]")));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", beptu);
-		pause(2000);
+		pause(3000);
 		Muangay.click();
 		
 	}
@@ -64,9 +76,39 @@ public class Function_bepantoan extends CommonBase{
 		pause(2000);
 		Muatragop.click();
 	}
+	public void muangay(String hoten,String sdt,String diachi, String loinhan)
+	{
+		Clickmuangay();
+		pause(2000);
+		Hoten.sendKeys(hoten);
+		Sodienthoai.sendKeys(sdt);
+		Diachi.sendKeys(diachi);
+		Loinhan.sendKeys(loinhan);
+		btnThanhtoan.click();
+	}
+	public void khaosat(String hoten,String sdt,String diachi, String loinhan)
+	{
+		clickKhaosat();
+		pause(3000);
+		Hoten.sendKeys(hoten);
+		Sodienthoai.sendKeys(sdt);
+		Diachituvan.sendKeys(diachi);
+		Loinhan.sendKeys(loinhan);
+		btnNhanTuvan.click();
+	}
+	public void Muatragop(String hoten,String sdt,String diachi, String loinhan)
+	{
+		ClickMuatragop();
+		pause(3000);
+		HotenMuatragop.sendKeys(hoten);
+		SodienthoaiMuatragop.sendKeys(sdt);
+		Diachimuatragop.sendKeys(diachi);
+		LoinhanMuatragop.sendKeys(loinhan);
+		btnNhanTuVanMuatragop.click();
+	}
 	
 	
-	
+
 	
 	public void xuatDanhSachSanPham() {
 	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));

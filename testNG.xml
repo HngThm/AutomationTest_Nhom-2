@@ -16,6 +16,11 @@
 			<class name="automation.testsuite.Tubep_LapDatTaiNhaTest" />
 			<class name="automation.testsuite.Tubep_MuaNgayTest" />
 			<class name="automation.testsuite.Tubep_MuaTGTest" /> 
+			<class name="automation.testsuite.Khaosat_Thietbinhabep" /> 
+			<class name="automation.testsuite.MuaNgay_Thietbinhabep" /> 
+			<class name="automation.testsuite.Muatragop_Thietbinhabep" /> 
+			<class name="automation.testsuite.Sanpham_Thietbinhabep" /> 
+			<class name="automation.testsuite.ThietBiNhaBep" /> 
 		</classes>	
 	</test> 
 	

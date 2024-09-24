@@ -4,22 +4,34 @@
 <th>Method name</th>
 <th>Groups</th>
 </tr><tr>
-<td>automation.testsuite.Sanpham_Thietbinhabep</td>
+<td>automation.testsuite.MuaNgay_Thietbinhabep</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@Test</td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>CheckBtnMuaNgay</td>
+<td>MuangayFail_SDTInvalid</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>CheckBtnMuatragop</td>
+<td>MuangayFail_SDTBlank</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>CheckBtnKhaosat</td>
+<td>MuangayFail_DiachiBlank</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>MuangayFail_HotenBlank</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>MuangaySuccess</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>MuangayFail_leaveBlank</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
@@ -29,11 +41,15 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>openFireFox</td>
+<td>openBrowser</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@AfterMethod</td>
 </tr>
+<tr>
+<td>&nbsp;</td>
+<td>closerFireFox</td>
+<td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@AfterClass</td>
 </tr>
